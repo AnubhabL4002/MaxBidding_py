@@ -13,6 +13,7 @@ while True:
     while True:
         answer = input("Any other bid remaining? (yes/no): ").lower()
         if answer == "yes":
+            print(100*"\n")
             break
         elif answer == "no":
             break
@@ -20,7 +21,6 @@ while True:
             print("Wrong input, please enter 'yes' or 'no'.")
     if answer == "no":
         break
-print(all_bids)
 # TODO-4: Compare bids in dictionary
 max_bid=-1
 person=""
