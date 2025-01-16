@@ -4,7 +4,7 @@ print(logo)
 all_bids={}
 while True:
     name=input("Enter your name: ")
-    bid=int(input("Enter your bid: "))
+    bid=int(input("Enter your bid: $"))
 
     # TODO-2: Save data into dictionary {name: price}
     all_bids[name]=bid
@@ -28,4 +28,4 @@ for bids in all_bids:
     if all_bids[bids] > max_bid:
         max_bid=all_bids[bids]
         person=bids
-print(f"Maximum bid is: {max_bid} and the person is: {person}")
+print(f"Maximum bid is: ${max_bid} and the person is: {person}")
